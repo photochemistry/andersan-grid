@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "andersan-grid"
+version = "0.1.0"
+description = "Interpolate airpollutionwatch snapshot measurements (GPR, linear) onto 2D grids and visualize."
+authors = ["Unknown <unknown@example.com>"]
+readme = "README.md"
+packages = [{ include = "andersan_grid" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.0"
+pandas = "^2.0.0"
+scipy = "^1.10.0"
+scikit-learn = "^1.3.0"
+matplotlib = "^3.7.0"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+# 開発用依存関係があればここに追加する
+
+[tool.poetry.scripts]
+andersan-grid = "andersan_grid.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+

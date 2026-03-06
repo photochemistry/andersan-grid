@@ -1,0 +1,6 @@
+data/
+outputs/
+*.png
+*.lock
+
+__pycache__
